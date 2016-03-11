@@ -6,5 +6,6 @@
 @import "objects";
 
 @import "hamburgers/hamburgers"; // Hamburgers!
+@include hamburgers-all();
 
 @import "trumps";
