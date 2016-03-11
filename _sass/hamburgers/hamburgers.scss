@@ -1,3 +1,30 @@
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+// Settings
+// ==================================================
+$hamburger-padding-x                       : 15px !default;
+$hamburger-padding-y                       : 15px !default;
+$hamburger-layer-width                     : 40px !default;
+$hamburger-layer-height                    : 4px !default;
+$hamburger-layer-spacing                   : 6px !default;
+$hamburger-layer-color                     : #000 !default;
+$hamburger-layer-border-radius             : 4px !default;
+$hamburger-hover-opacity                   : 0.7 !default;
+$hamburger-hover-transition-duration       : 0.15s !default;
+$hamburger-hover-transition-timing-function: linear !default;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter    : opacity(50%) !default;
+
 @import "settings";
 
 // Base Hamburger (We need this)
@@ -32,3 +59,33 @@
 @import "types/squeeze";
 @import "types/vortex";
 @import "types/vortex-r";
+
+@mixin hamburgers-all() {
+	@include hamburger--3dx();
+	@include hamburger--3dx-r();
+	@include hamburger--3dy();
+	@include hamburger--3dy-r();
+	@include hamburger--arrow();
+	@include hamburger--arrow-r();
+	@include hamburger--arrowalt();
+	@include hamburger--arrowalt-r();
+	@include hamburger--boring();
+	@include hamburger--collapse();
+	@include hamburger--collapse-r();
+	@include hamburger--elastic();
+	@include hamburger--elastic-r();
+	@include hamburger--emphatic();
+	@include hamburger--emphatic-r();
+	@include hamburger--slider();
+	@include hamburger--slider-r();
+	@include hamburger--spin();
+	@include hamburger--spin-r();
+	@include hamburger--spring();
+	@include hamburger--spring-r();
+	@include hamburger--squeeze();
+	@include hamburger--stand();
+	@include hamburger--vortex();
+	@include hamburger--vortex-r();
+}
+
+
