@@ -25,8 +25,6 @@ $hamburger-hover-transition-timing-function: linear !default;
 $hamburger-hover-use-filter: false !default;
 $hamburger-hover-filter    : opacity(50%) !default;
 
-@import "settings";
-
 // Base Hamburger (We need this)
 // ==================================================
 @import "base";
